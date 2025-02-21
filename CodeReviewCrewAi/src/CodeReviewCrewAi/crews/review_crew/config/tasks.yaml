@@ -1,0 +1,13 @@
+review_code:
+  description: >
+    Review the code ONLY provided from the file '{which_file}': {code}. And consider user prompt too. User Prompt : {user_prompt}
+  expected_output: >
+    A detailed code review report specifying defects and recommendations. Include suggestions for improvements if applicable. Dont write code, just review it. NEVER WRITE CODE.
+  agent: code_reviewer
+
+code_completion:
+  description: >
+    Complete the provided code snippet ONLY from file '{which_file}' by filling in missing functionalities. And consider user prompt too. User Prompt : {user_prompt}
+  expected_output: >
+    A completed and functional code snippet.
+  agent: code_completer
